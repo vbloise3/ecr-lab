@@ -4,9 +4,13 @@
   <title>AWS Certified Architect Associate Course</title>
 <script type="text/javascript">
 function get_date_time() {
+   const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+   ];
    var currentdate = new Date();
-   var datetime = "Last Sync: " + currentdate.getDate() + "/"
-                + (currentdate.getMonth()+1)  + "/"
+   var datetime = "Last Sync: " 
+                + monthNames[(currentdate.getMonth())]  + " "
+                + currentdate.getDate() + ", "
                 + currentdate.getFullYear() + " @ "
                 + currentdate.getHours() + ":"
                 + currentdate.getMinutes() + ":"

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Certified Architect Associate Course</title>
+<script type="text/javascript">
+function get_date_time() {
+   var currentdate = new Date();
+   var datetime = "Last Sync: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/"
+                + currentdate.getFullYear() + " @ "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes() + ":"
+                + currentdate.getSeconds();
+   document.getElementById("myText").innerHTML = datetime;
+}
+</script>
+</head>
+<body onload="get_date_time()">
+  <span style=color:orange;text-align:center;display:flex;flex-direction:column;justify-content:center;text-align:center;> 
+    <h1>AWS Certified Architect Associate course</h1>
+    <span style=color:darkslategray;>
+      <h1>You have successfully created an ECR repository app!</H1>
+      <H2>Congratulations on learning the ECR fundamentals in the AWS Certified Architect Associate course!</H2>
+    </span>
+    <p>This demo website was developed by Whiz Labs.</p>
+    <p>Now using the Django's Template Engine.</p>
+    <span style=color:darkslategray;>
+      <p>Run at: <span id="myText"></span></p>
+    </span>
+  </span>
+</body>
+</html> 
